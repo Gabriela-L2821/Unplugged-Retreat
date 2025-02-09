@@ -319,6 +319,10 @@ section.reviews {
   justify-content: space-evenly;
 }
 
+.social-icons p {
+  margin: 0;
+}
+
 .copyright {
   text-align: center;
 }
@@ -507,6 +511,61 @@ section.reviews {
     line-height: 18px;
     text-align: left;
   }
+
+  main section.mission {
+    display: flex;
+    justify-content: center;
+    background-color: #527158;
+    padding: 0 50px;
+  }
+
+  .mission h2 {
+    padding-top: 20px;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-bottom: 50px;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  section.contact-section {
+    display: flex;
+    justify-content: center;
+    background-color: #2a423a;
+    padding: 50px;
+  }
+
+  .contact-section h2 {
+    margin: 0;
+  }
+
+  .contact-content h4 {
+    margin: 0;
+    padding-top: 25px;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* **************Tablet Styles***************** */
@@ -542,9 +601,23 @@ section.reviews {
     width: 40%;
   }
 
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
   h3 {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
   }
 
   section.features {
@@ -628,6 +701,70 @@ section.reviews {
   .copyright p {
     text-align: center;
   }
+
+  main section.mission {
+    display: flex;
+    justify-content: center;
+    background-color: #527158;
+    padding: 0 50px;
+  }
+  .mission h2 {
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .mission-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-bottom: 50px;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  section.contact-section {
+    display: flex;
+    justify-content: center;
+    background-color: #2a423a;
+    padding: 50px;
+  }
+
+  .contact-section h2 {
+    margin: 0;
+  }
+
+  .contact-content h4 {
+    margin: 0;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+
+  .contact-section h2 {
+    font-size: 36px;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-content p {
+    text-align: left;
+  }
 }
 
 /* **************Mobile Styles**************** */
@@ -703,7 +840,7 @@ section.reviews {
   h3,
   h4 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: Poppins, sans-serif;
   }
 
@@ -716,6 +853,7 @@ section.reviews {
   h2 {
     font-size: 28px;
     font-weight: 500;
+    line-height: 43px;
     margin: 0;
     font-family: Poppins, sans-serif;
   }
@@ -852,6 +990,65 @@ section.reviews {
 
   .faqs .faq-section {
     padding-bottom: 50px;
+  }
+
+  main section.mission {
+    display: flex;
+    justify-content: center;
+    background-color: #527158;
+    padding: 0;
+  }
+
+  .mission h2 {
+    padding-top: 50px;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  section.contact-section {
+    display: flex;
+    justify-content: center;
+
+    background-color: #2a423a;
+    padding: 50px 0;
+  }
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .general-contact p {
+    text-align: left;
+  }
+
+  .facilitator-contact p {
+    text-align: left;
+  }
+
+  .contact-content h4 {
+    padding-bottom: 20px;
   }
 }
 
