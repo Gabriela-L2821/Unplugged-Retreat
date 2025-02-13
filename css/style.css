@@ -102,7 +102,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: #202322;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -110,6 +110,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header nav {
@@ -166,6 +167,10 @@ footer .social-icons p {
   justify-content: center;
 }
 
+footer p {
+  margin: 0;
+}
+
 .footer-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -204,6 +209,7 @@ section.features {
   justify-content: center;
   background-image: url(../unplugged-retreat-features.jpg);
   background-size: cover;
+  margin: 0;
 }
 
 .features .features-items {
@@ -351,6 +357,10 @@ section.reviews {
 .contact-section {
   display: flex;
   justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /* *************FAQ Page************ */
