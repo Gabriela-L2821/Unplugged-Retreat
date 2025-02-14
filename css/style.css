@@ -171,6 +171,10 @@ footer p {
   margin: 0;
 }
 
+footer .contact {
+  margin-bottom: 50px;
+}
+
 .footer-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,6 +194,10 @@ footer p {
   width: 20%;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
+
 address {
   font-style: normal;
 }
@@ -198,6 +206,7 @@ address {
 
 .content-wrapper {
   width: 90%;
+  margin: 50px 0;
 }
 
 nav ul li a {
@@ -209,6 +218,14 @@ section.features {
   justify-content: center;
   background-image: url(../unplugged-retreat-features.jpg);
   background-size: cover;
+  margin: 0;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features p {
   margin: 0;
 }
 
@@ -226,6 +243,11 @@ section.features {
   column-gap: 5.5%;
   width: 80%;
   margin: 0 auto;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 article {
@@ -327,6 +349,10 @@ section.reviews {
   font-size: 36px;
 }
 
+.reviews h3 {
+  width: 55%;
+}
+
 .reviews img {
   width: 100%;
 }
@@ -374,6 +400,15 @@ section.reviews {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 /* ==========================================================================
    Helper classes
@@ -850,8 +885,9 @@ section.reviews {
   .header-divider {
     border-bottom: 2px solid #3a3a3a;
 
-    height: 15px;
+    height: 1px;
     width: 100%;
+    margin: 10px 0 20px 0;
   }
 
   .hero-area {
