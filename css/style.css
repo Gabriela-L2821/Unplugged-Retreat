@@ -100,6 +100,8 @@ body {
 
 ul, ol {
   list-style: none;
+  margin:0;
+  padding:0;
 
 }
 
@@ -119,6 +121,7 @@ h3, h4 {
 font-family: 'Poppins', sans-serif;
 font-size:1.125em;
 font-weight:500;
+margin:20px 0;
 }
 
 p {
@@ -161,6 +164,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  background-color: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -168,12 +172,19 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 /* --------------------------Footer Styles---------------------- */
@@ -184,6 +195,18 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -202,15 +225,10 @@ footer .copyright {
   margin: 20px 0;
 }
 
-address {
-  font-style: normal;
-}
+
 
 /*---------------------------------General Styles-----------------------------*/
 
-nav ul li a {
-  color: #e2e3ed;
-}
 
 /* Hero Area */
 
@@ -226,12 +244,23 @@ nav ul li a {
   padding: 0 15px;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* Aside */
 
 aside {
   display: flex;
   justify-content: center;
   background-color: #527158;
+}
+
+aside .form{
+  margin-top: 30px;
 }
 
 /* Features */
@@ -284,37 +313,42 @@ aside {
 input[type="text"],
 input[type="button"] {
   width: 100%;
-  height: 50px;
+  
 }
 
 input[type="text"] {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-style: italic;
-  text-indent: 15px;
-  font-weight: 500;
-
-  padding: 0;
-  margin-bottom: 20px;
-
-  border: none;
+  box-sizing: border-box;
+  width:100%;
+  color:#2a423a;
+  font-style:italic;
+  padding: 1em;
+   
 }
 
 input[type="button"] {
+  width:100%;
+  padding:20px 0;
+  margin-top:20px;
   background-color: #2a423a;
-  font-size: 18px;
-  text-transform: uppercase;
+  font-family:'Poppins', Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 1.125em;
   color: #e2e3ed;
-  border: none;
+  border:none;
+  text-align:center;
+  text-transform: uppercase;
+  
 }
 
 /* *********About Page************ */
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
@@ -325,6 +359,7 @@ input[type="button"] {
 
 /* *************FAQ Page************ */
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -343,6 +378,11 @@ input[type="button"] {
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 /* ==========================================================================
    Helper classes
