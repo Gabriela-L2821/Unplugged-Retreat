@@ -11,10 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-/*  { 
-  box-sizing: border-box;
-}*/
-
 html {
   color: #222;
   font-size: 1em;
@@ -502,6 +498,10 @@ section.reviews {
     width: 960px;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
   .hero-area {
     background-size: 100%;
     background-position: center;
@@ -510,6 +510,7 @@ section.reviews {
 
   .hero-area h1 {
     font-size: 60px;
+    width: 80%;
   }
 
   aside {
@@ -518,14 +519,12 @@ section.reviews {
 
   aside .content-wrapper {
     padding-bottom: 20px;
+    justify-content: space-around;
   }
 
-  .form {
-    width: 40%;
-  }
-
-  .form-description {
-    width: 40%;
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
   }
 
   section.features {
@@ -542,17 +541,16 @@ section.reviews {
     font-family: Poppins, sans-serif;
   }
 
+  .features h2 {
+    width: 90%;
+  }
+
   .features .features-items {
     align-items: center;
   }
-  .content-wrapper .features-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
-    margin: 0 auto;
-    column-gap: 5%;
+  .features article {
+    flex-basis: 33%;
   }
-
   article img {
     align-self: center;
   }
