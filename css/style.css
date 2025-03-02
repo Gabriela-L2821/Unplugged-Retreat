@@ -11,8 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -89,60 +87,56 @@ body {
   margin: 0 auto;
   font-family: Open Sans, sans-serif;
   color: #e2e3ed;
-  font-size:1em;
+  font-size: 1em;
   text-align: left;
 }
 
-   .content-wrapper {
+.content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
-  margin:0;
-  padding:0;
-
+  margin: 0;
+  padding: 0;
 }
 
 a {
-color: #e2e3ed;
-text-decoration:none;
-
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 h2 {
-font-family: 'Poppins', sans-serif;
-font-size:1.875em;
-font-weight:500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
 }
 
-h3, h4 {
-font-family: 'Poppins', sans-serif;
-font-size:1.125em;
-font-weight:500;
-margin:20px 0;
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
-font-size:0.875em;
-line-height:1.285;
-
+  font-size: 0.875em;
+  line-height: 1.285;
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
-
 address {
-  font-style:normal;
-
+  font-style: normal;
 }
-
 
 /*----------------Base Header - Footer Styles-------------------------------*/
 
@@ -153,6 +147,10 @@ header {
   justify-content: center;
   background-color: #202322;
   padding: 15px 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 header .content-wrapper {
@@ -225,10 +223,7 @@ footer .copyright {
   margin: 20px 0;
 }
 
-
-
 /*---------------------------------General Styles-----------------------------*/
-
 
 /* Hero Area */
 
@@ -237,8 +232,9 @@ footer .copyright {
   justify-content: center;
   background-image: url(../unplugged-retreat.jpg);
 
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
   height: 500px;
   padding: 0 15px;
@@ -246,7 +242,7 @@ footer .copyright {
 
 .hero-area h1 {
   font-size: 2.25em;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -259,7 +255,7 @@ aside {
   background-color: #527158;
 }
 
-aside .form{
+aside .form {
   margin-top: 30px;
 }
 
@@ -268,6 +264,9 @@ aside .form{
 .features {
   display: flex;
   justify-content: center;
+  background-image: url(../unplugged-retreat-features.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .features h2 {
@@ -281,6 +280,11 @@ aside .form{
   flex-flow: row wrap;
 }
 
+.fontawesom-icon img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
 .features article {
   width: 63%;
   margin: 30px 0;
@@ -288,6 +292,7 @@ aside .form{
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -295,6 +300,7 @@ aside .form{
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -306,6 +312,10 @@ aside .form{
   margin: 20px 0;
 }
 
+.reviews article figure {
+  width: 100%;
+}
+
 /* ================================
    About Page
    ================================ */
@@ -313,31 +323,28 @@ aside .form{
 input[type="text"],
 input[type="button"] {
   width: 100%;
-  
 }
 
 input[type="text"] {
   box-sizing: border-box;
-  width:100%;
-  color:#2a423a;
-  font-style:italic;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
   padding: 1em;
-   
 }
 
 input[type="button"] {
-  width:100%;
-  padding:20px 0;
-  margin-top:20px;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
   background-color: #2a423a;
-  font-family:'Poppins', Helvetica, Arial, sans-serif;
-  font-weight:500;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
   color: #e2e3ed;
-  border:none;
-  text-align:center;
+  border: none;
+  text-align: center;
   text-transform: uppercase;
-  
 }
 
 /* *********About Page************ */
@@ -357,31 +364,48 @@ input[type="button"] {
   margin: 0;
 }
 
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* *************FAQ Page************ */
-.faq {
+.faqs {
   background-color: #527158;
   display: flex;
   justify-content: center;
 }
 
-.faq .content-wrapper {
+.faq-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
 
-.faq h2 {
+.faqs h2 {
   margin-bottom: 40px;
 }
 
-.faq-content {
+.faq-questions {
   margin-bottom: 50px;
+  width: 45%;
 }
 
-
-.faq-content h4 {
+.faq-questions h4 {
   line-height: 1.333;
 }
 /* ==========================================================================
@@ -469,13 +493,15 @@ input[type="button"] {
 
 /* Style adjustments for viewports that meet the condition */
 
-
-
 /* **************Tablet Styles***************** */
 
 @media only screen and (min-width: 768px) {
   header {
     padding: 33px 0;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   .header-divider {
@@ -484,7 +510,7 @@ input[type="button"] {
 
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
   header .content-wrapper {
@@ -538,6 +564,11 @@ input[type="button"] {
     width: 62%;
   }
 
+  .fontawesom-icon img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   /* Reviews */
 
   .reviews img {
@@ -551,6 +582,10 @@ input[type="button"] {
 
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews article figure {
+    width: 50%;
   }
 
   /* Footer */
@@ -608,23 +643,6 @@ input[type="button"] {
     width: 45%;
   }
 
-  .map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 40%;
-    overflow: hidden;
-    position: relative;
-    margin: 0;
-  }
-
-  .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -636,19 +654,22 @@ input[type="button"] {
   }
 }
 
-
-
-
-
 /******************** Desktop styles *******************/
 
 @media only screen and (min-width: 1200px) {
   .content-wrapper {
     max-width: 960px;
+    
+    margin: 50px 0;
+  }
   }
 
   header {
     padding: 15px 0;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   /* Hero Area */
@@ -657,10 +678,13 @@ input[type="button"] {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    height: 600px;
   }
 
   .hero-area h1 {
     width: 80%;
+    font-size: 60px;
+    
   }
 
   /* Aside */
@@ -684,58 +708,43 @@ input[type="button"] {
     flex-basis: 33%;
   }
 
+  .fontawesom-icon img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   /* Reviews */
 
   .reviews article div {
     width: 42%;
   }
 
-
+  .reviews article figure {
+    width: 50%;
+  }
 
   /* =================
-    FAQ Page 
-    =================*/
+  FAQ Page 
+  =================*/
 
   .faqs h2 {
     width: 100%;
   }
 
   /* ===================
-     About Page
-     =================== */
-
- 
+  About Page
+  =================== */
 
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
   }
-
-  
-
-  .map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 30%;
-    overflow: hidden;
-    position: relative;
-    margin: 0;
-  }
-
-  .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  
+}
 
 /* **************Mobile Styles**************** */
 
 /* @media only screen and (max-width: 30em) { 
-  header .content-wrapper {
+    header .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
