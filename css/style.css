@@ -628,6 +628,10 @@ input[type="button"] {
     width: 100%;
   }
 
+  .map figure {
+    padding-bottom: 59%;
+  }
+
   /*===============================
     About Page} 
     ===============================*/
@@ -739,7 +743,7 @@ FAQ Page
   }
 
   .map figure {
-    padding-bottom: 40%;
+    padding-bottom: 37.5%;
   }
 }
 /* **************Mobile Styles**************** */
