@@ -124,7 +124,7 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.285;
+  line-height: 18px;
 }
 
 img {
@@ -216,10 +216,10 @@ footer .social-icons {
   justify-content: center;
   align-items: center;
   background-color: #527158;
-  font-size: 3em;
+  font-size: 1.3125em;
 
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -230,7 +230,7 @@ footer .social-icons p {
 }
 
 footer .copyright {
-  margin: 20px 0;
+  margin: 50px 0 0 0;
 }
 
 /*---------------------------------General Styles-----------------------------*/
@@ -254,7 +254,7 @@ footer .copyright {
   font-size: 2.25em;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 43px;
 }
 
 /* Aside */
@@ -320,6 +320,7 @@ aside .form {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -329,6 +330,10 @@ aside .form {
 
 .reviews article figure {
   width: 100%;
+}
+
+.bottling-co {
+  margin-top: 40px;
 }
 
 /* ================================
@@ -407,21 +412,22 @@ input[type="button"] {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-flow: row wrap;
+  flex-direction: column;
   margin: 50px 0 0 0;
 }
 
 .faqs h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .faq-questions {
   margin-bottom: 50px;
-  width: 45%;
+  width: 100%;
 }
 
 .faq-questions h4 {
-  line-height: 1.333;
+  line-height: 24px;
 }
 /* ==========================================================================
    Helper classes
@@ -541,14 +547,24 @@ input[type="button"] {
     justify-content: space-between;
   }
 
+  h2 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
   .hero-area {
     background-size: cover;
     background-position: center;
   }
 
   .hero-area h1 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   /* Aside */
@@ -605,11 +621,15 @@ input[type="button"] {
 
   /* Footer */
 
-  .footer .content-wrapper {
+  footer .content-wrapper {
     width: 65%;
   }
 
-  .footer-content {
+  footer p {
+    line-height: 1.125em;
+  }
+
+  .footer-contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -617,6 +637,18 @@ input[type="button"] {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .contact h4 {
+    font-size: 1.5em;
+  }
+
+  footer .social h4 {
+    font-size: 1.5em;
+  }
+
+  footer .social {
+    width: 30%;
   }
 
   footer .copyright {
@@ -631,7 +663,7 @@ input[type="button"] {
     FAQ Page 
     ===============================*/
 
-  .faq .content-wrapper {
+  .faqs .content-wrapper {
     justify-content: space-between;
   }
 
@@ -641,6 +673,12 @@ input[type="button"] {
 
   .faqs h2 {
     width: 100%;
+  }
+
+  .faq-questions h4,
+  p {
+    font-size: 0.875em;
+    line-height: 15.75px;
   }
 
   .map figure {
@@ -690,6 +728,20 @@ input[type="button"] {
     width: 30%;
   }
 
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
   /* Hero Area */
 
   .hero-area {
@@ -702,6 +754,8 @@ input[type="button"] {
   .hero-area h1 {
     width: 80%;
     font-size: 60px;
+    line-height: 1.1;
+    margin: 20px 0;
   }
 
   /* Aside */
@@ -746,6 +800,13 @@ FAQ Page
 
   .faqs h2 {
     width: 100%;
+    font-size: 3rem;
+  }
+
+  .faq-questions h4,
+  p {
+    font-size: 1.125em;
+    line-height: 1.125em;
   }
 
   /* ===================
@@ -755,6 +816,21 @@ FAQ Page
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+  }
+
+  .mission h2 {
+    font-size: 3rem;
+  }
+
+  .contact-section h2 {
+    font-size: 3rem;
+  }
+
+  footer .social {
+    width: 30%;
+  }
+
+  .social-icons {
   }
 
   .map figure {
