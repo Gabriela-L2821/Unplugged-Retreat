@@ -233,6 +233,10 @@ footer .copyright {
   margin: 50px 0 0 0;
 }
 
+footer .content-wrapper {
+  margin: 50px 0 20px 0;
+}
+
 /*---------------------------------General Styles-----------------------------*/
 
 /* Hero Area */
@@ -265,6 +269,10 @@ aside {
   background-color: #527158;
 }
 
+aside .content-wrapper {
+  margin: 50px 0 70px 0;
+}
+
 aside .form {
   margin-top: 30px;
 }
@@ -280,7 +288,7 @@ aside .form {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .features .features-items {
@@ -351,6 +359,7 @@ input[type="text"] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  font-size: 1.125em;
 }
 
 input[type="button"] {
@@ -360,7 +369,7 @@ input[type="button"] {
   background-color: #2a423a;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 1.125em;
+  font-size: 1.25em;
   color: #e2e3ed;
   border: none;
   text-align: center;
@@ -374,10 +383,18 @@ input[type="button"] {
   justify-content: center;
 }
 
+.mission .content-wrapper {
+  margin: 50px 0 75px 0;
+}
+
 .contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
+}
+
+.contact-section .content-wrapper {
+  margin: 50px 0 75px 0;
 }
 
 .contact-content p {
@@ -406,6 +423,10 @@ input[type="button"] {
   background-color: #527158;
   display: flex;
   justify-content: center;
+}
+
+.faqs .content-wrapper {
+  margin: 50px 0 25px 0;
 }
 
 .faq-section {
@@ -531,7 +552,7 @@ input[type="button"] {
 
   .content-wrapper {
     max-width: 640px;
-    margin: 50px 0;
+    margin: 50px 0 20px 0;
   }
 
   header .content-wrapper {
@@ -540,7 +561,7 @@ input[type="button"] {
   }
 
   header nav {
-    width: 20%;
+    width: 25%;
   }
 
   header nav ul {
@@ -609,6 +630,8 @@ input[type="button"] {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    gap: 5%;
+    align-items: center;
   }
 
   .reviews article div {
@@ -617,6 +640,15 @@ input[type="button"] {
 
   .reviews article figure {
     width: 50%;
+  }
+
+  .reviews h3 {
+    width: 100%;
+    line-height: 1.1;
+  }
+
+  .bottling-co {
+    margin: 0;
   }
 
   /* Footer */
@@ -653,21 +685,21 @@ input[type="button"] {
 
   footer .copyright {
     width: 100%;
-  }
-
-  input[type="button"] {
-    font-size: 98%;
+    margin: 70px 0 0 0;
   }
 
   /* ===============================
     FAQ Page 
     ===============================*/
 
-  .faqs .content-wrapper {
+  .faq-section {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+    margin: 50px 0 0 0;
   }
 
-  .faq-content {
+  .faq-questions {
     flex-basis: 45%;
   }
 
@@ -675,8 +707,12 @@ input[type="button"] {
     width: 100%;
   }
 
-  .faq-questions h4,
-  p {
+  .faq-questions h4 {
+    font-size: 1em;
+    line-height: 1.1;
+  }
+
+  .faq-questions p {
     font-size: 0.875em;
     line-height: 15.75px;
   }
@@ -739,7 +775,7 @@ input[type="button"] {
 
   p {
     font-size: 1.125rem;
-    line-height: 1.5rem;
+    line-height: 1.4;
   }
 
   /* Hero Area */
@@ -769,6 +805,10 @@ input[type="button"] {
     width: 30%;
   }
 
+  .form-description h3 {
+    line-height: 1.1;
+  }
+
   /* Features */
 
   .features h2 {
@@ -785,33 +825,66 @@ input[type="button"] {
   }
 
   /* Reviews */
+  .reviews .content-wrapper {
+    margin: 100px 0;
+  }
 
+  .reviews h2 {
+    margin: 0 0 100px 0;
+  }
+
+  .reviews h3 {
+    width: 100%;
+    line-height: 1.1;
+  }
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews article {
+    align-items: center;
   }
 
   .reviews article figure {
     width: 50%;
   }
 
+  .bottling-co {
+    margin: 0;
+  }
+
   /* =================
 FAQ Page 
 =================*/
+
+  .faq-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+  }
 
   .faqs h2 {
     width: 100%;
     font-size: 3rem;
   }
 
-  .faq-questions h4,
-  p {
-    font-size: 1.125em;
+  .faq-questions h4 {
+    font-size: 1.25em;
     line-height: 1.125em;
+  }
+
+  .faq-questions {
+    flex-basis: 45%;
   }
 
   /* ===================
   About Page
   =================== */
+
+  .contact-section .content-wrapper {
+    margin: 50px 0 90px 0;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -824,6 +897,10 @@ FAQ Page
 
   .contact-section h2 {
     font-size: 3rem;
+  }
+
+  footer .content-wrapper {
+    margin: 50px 0 20px 0;
   }
 
   footer .social {
@@ -1099,7 +1176,7 @@ FAQ Page
     left: 0;
   }
   
-  section.contact-section {
+  section{
     display: flex;
     justify-content: center;
 
